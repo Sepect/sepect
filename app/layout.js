@@ -3,6 +3,7 @@ import "@css/component.css";
 // import "@css/font-awesome.css";
 import "@css/font-awesome.min.css";
 import "@css/style.css";
+import "@css/blue.css";
 import "./globals.css";
 // <!-- Live Style Switcher - demo only --;
 import TunisState from "@/context/context";

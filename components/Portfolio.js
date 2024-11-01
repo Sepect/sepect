@@ -13,7 +13,7 @@ const items = [
     img: "assets/img/projects/my/makole.jpg",
     project: "Android and IOS",
     client: "JNE",
-    langages: "Laravel, React native",
+    languages: "Laravel, React Native",
     previewLink: "Makole.id",
   },
   {
@@ -24,7 +24,7 @@ const items = [
     img: "assets/img/projects/my/webmakole.jpg",
     project: "Website",
     client: "JNE",
-    langages: "Laravel",
+    languages: "Laravel",
     previewLink: "Makole.id",
   },
   {
@@ -35,7 +35,7 @@ const items = [
     img: "assets/img/projects/my/sulex.jpg",
     project: "Android",
     client: "Sulawesi Express",
-    langages: "Laravel, React Native",
+    languages: "Laravel, React Native",
     previewLink: "sulex.id",
   },
   {
@@ -46,7 +46,7 @@ const items = [
     img: "assets/img/projects/my/merabu.png",
     project: "Android",
     client: "DIPStrategy",
-    langages: "React Native",
+    languages: "React Native",
     previewLink: "",
   },
   {
@@ -57,7 +57,7 @@ const items = [
     img: "assets/img/projects/my/dbs.png",
     project: "Android",
     client: "DIPStrategy",
-    langages: "ReactJS, Angular",
+    languages: "ReactJS, Angular",
     previewLink: "",
   },
 ];
@@ -70,7 +70,7 @@ const Portfolio = () => {
         {/* Section Title Starts */}
         <SectionTitle
           bigTitle={"works"}
-          colorTitle={"portfolio"}
+          colorTitle={"portofolio"}
           normalTitle={"my"}
         />
         {/* Section Title Ends */}

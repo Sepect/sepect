@@ -21,7 +21,7 @@ const bio = [
       { id: 6, type: "Address", value: "Makassar" },
       { id: 7, type: "Phone", value: "+62 8229 9164 215" },
       { id: 8, type: "Email", value: "sepect.hzten@gmail.com" },
-      { id: 10, type: "Langages", value: "Indonesian, English" },
+      { id: 10, type: "Languages", value: "Indonesian, English" },
     ],
   },
 ];

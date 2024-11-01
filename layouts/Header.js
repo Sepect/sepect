@@ -6,7 +6,7 @@ const Header = () => {
   const menus = [
     { id: 1, title: "Home", href: "home", icon: "fa fa-home" },
     { id: 2, title: "About", href: "about", icon: "fa fa-user" },
-    { id: 3, title: "Portfolio", href: "portfolio", icon: "fa fa-briefcase" },
+    { id: 3, title: "Portofolio", href: "portfolio", icon: "fa fa-briefcase" },
     { id: 4, title: "Contact", href: "contact", icon: "fa fa-envelope-open" },
     // { id: 5, title: "Blog", href: "blog", icon: "fa fa-comments" },
   ];

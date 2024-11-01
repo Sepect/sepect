@@ -3,6 +3,9 @@ import { TunisContext } from "@/context/context";
 import SectionContainer from "@/layouts/SectionContainer";
 import { useContext } from "react";
 
+const image1 = 'assets/img/my/1.jpg';
+const image2 = 'assets/img/my/2.jpg';
+
 const Home = ({ authorImage }) => {
   const { changeNav, dark } = useContext(TunisContext);
   return (
@@ -12,7 +15,7 @@ const Home = ({ authorImage }) => {
         {/* Desktop Image Starts */}
         <img
           className="hidden from-lg:block fixed w-1/3 h-[calc(100vh-80px)] left-40 top-40 rounded-30 shadow-1 object-cover"
-          src={authorImage ? authorImage : "assets/img/my/2.jpg"}
+          src={authorImage ? authorImage : image2}
           alt=""
         />
         {/* Desktop Image Ends */}
@@ -20,7 +23,7 @@ const Home = ({ authorImage }) => {
           <div className="mx-auto max-w-550 custom-md-1:max-w-450">
             {/* Mobile Image Starts */}
             <img
-              src="assets/img/my/1.jpg"
+              src={image1}
               className="hidden down-lg:block xs:!hidden rounded-full w-270 h-270 mx-auto mb-25 border-4 border-solid border-black-3"
               alt="my picture"
             />

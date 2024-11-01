@@ -20,7 +20,7 @@ const { NAV, TOGGLE, COLOR, POPUP, DIRECTION, DARK } = type;
 const initialState = {
   nav: "home",
   toggle: false,
-  color: "blue",
+  color: "goldenrod",
   direction: "cornertopright",
   popup: null,
   blogs: [

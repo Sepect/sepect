@@ -4,6 +4,7 @@ import SectionContainer from "@/layouts/SectionContainer";
 import emailjs from "emailjs-com";
 import { useContext, useState } from "react";
 import SectionTitle from "./SectionTitle";
+import Swal from 'sweetalert2';
 
 const socials = [
   { id: 1, icon: "fa fa-facebook", link: "#" },
@@ -16,49 +17,61 @@ const Contact = () => {
   const { dark } = useContext(TunisContext);
 
   const [mailData, setMailData] = useState({
-    name: "",
+    to_name: "",
     email: "",
     subject: "",
     message: "",
     template: "tunis tailwind react",
   });
-  const { name, email, subject, message, template } = mailData;
+  const {to_name, email, subject, message, template } = mailData;
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false)
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
+
   const onSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     if (
-      name.length === 0 ||
+      to_name.length === 0 ||
       email.length === 0 ||
       subject.length === 0 ||
       message.length === 0
     ) {
       setError(true);
       clearError();
-    } else {
+      Swal.fire({
+        title: 'INFO!',
+        text: 'Please complete the data on the form!',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#4169e1'
+      });
+      setIsLoading(false);
+    } else {      
       emailjs
         .send(
-          "service_gsps4gw", // service id
-          "template_evezi69", // template id
+          "service_zpcft79", // service id
+          "template_5rq8ksg", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "RsZ0cCjvVe-cgSzcb" // public api
         )
         .then(
           (response) => {
             setError(false);
             clearError();
             setMailData({
-              name: "",
+              to_name: "",
               email: "",
               message: "",
-              phone: "",
               subject: "",
               template: "tunis tailwind react",
             });
+      setIsLoading(false);
           },
           (err) => {
             console.log(err.text);
+      setIsLoading(false);
           }
         );
     }
@@ -142,9 +155,9 @@ const Contact = () => {
                         dark ? "black" : "grey"
                       } py-11 px-26 mb-30 rounded-30 outline-0 transition duration-300 placeholder:text-placeholder field-form`}
                       type="text"
-                      name="name"
+                      name="to_name"
                       onChange={(e) => onChange(e)}
-                      value={name}
+                      value={to_name}
                       placeholder="YOUR NAME"
                     />
                   </div>
@@ -201,11 +214,8 @@ const Contact = () => {
                   <div className="w-full px-16 xs:px-0 mt-30">
                     <button
                       type="submit"
+                      disabled={isLoading}
                       className="button cursor-pointer group overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        onSubmit(e);
-                      }}
                     >
                       <span
                         className={`relative z-20 ${
@@ -214,9 +224,12 @@ const Contact = () => {
                             : "text-black-6 group-hover:text-white transition-all duration-300"
                         }`}
                       >
-                        send message
+                        {isLoading ? 'Loading . . .' : 'send message'}
                       </span>
+                      {isLoading ? 
+                      <span className="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-spinner bg-accent" /> : 
                       <span className="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-send bg-accent" />
+                      }
                     </button>
                   </div>
                   <div className="w-full px-16 xs:px-0">

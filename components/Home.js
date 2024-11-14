@@ -5,6 +5,8 @@ import { useContext } from "react";
 
 const image1 = 'assets/img/my/1.jpg';
 const image2 = 'assets/img/my/2.jpg';
+const image12 = 'assets/img/my/12.jpg';
+const image10 = 'assets/img/my/10.jpg';
 
 const Home = ({ authorImage }) => {
   const { changeNav, dark } = useContext(TunisContext);
@@ -15,7 +17,7 @@ const Home = ({ authorImage }) => {
         {/* Desktop Image Starts */}
         <img
           className="hidden from-lg:block fixed w-1/3 h-[calc(100vh-80px)] left-40 top-40 rounded-30 shadow-1 object-cover"
-          src={authorImage ? authorImage : image2}
+          src={authorImage ? authorImage : image12}
           alt=""
         />
         {/* Desktop Image Ends */}
@@ -23,7 +25,7 @@ const Home = ({ authorImage }) => {
           <div className="mx-auto max-w-550 custom-md-1:max-w-450">
             {/* Mobile Image Starts */}
             <img
-              src={image1}
+              src={image10}
               className="hidden down-lg:block xs:!hidden rounded-full w-270 h-270 mx-auto mb-25 border-4 border-solid border-black-3"
               alt="my picture"
             />

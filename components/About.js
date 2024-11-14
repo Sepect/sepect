@@ -119,7 +119,7 @@ const About = () => {
               </h3>
               <img
                 className="hidden xs:block rounded-full border-4 border-solid border-black-3 w-230 h-230 mb-25 mx-auto"
-                src={image12}
+                src={image1}
                 alt=""
               />
               <div className="flex justify-between xs:justify-start font-Open-sans">

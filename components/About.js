@@ -95,6 +95,7 @@ const skills = [
 ];
 
 const image1 = 'assets/img/my/1.jpg';
+const image1 = 'assets/img/my/12.jpg';
 const cv = 'assets/cv/cv.pdf';
 
 const About = () => {
@@ -118,7 +119,7 @@ const About = () => {
               </h3>
               <img
                 className="hidden xs:block rounded-full border-4 border-solid border-black-3 w-230 h-230 mb-25 mx-auto"
-                src={image1}
+                src={image12}
                 alt=""
               />
               <div className="flex justify-between xs:justify-start font-Open-sans">

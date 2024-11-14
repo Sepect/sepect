@@ -95,7 +95,7 @@ const skills = [
 ];
 
 const image1 = 'assets/img/my/1.jpg';
-const image1 = 'assets/img/my/12.jpg';
+const image12 = 'assets/img/my/12.jpg';
 const cv = 'assets/cv/cv.pdf';
 
 const About = () => {

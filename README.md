@@ -13,7 +13,7 @@ I am a versatilist and easily adapt to different hats (Full Stack Web Developer 
 ### 🧐 More About Me:
 
 - 🌱 &nbsp; I’m currently learning Typescript and NodeJS;
-- 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://gitlab.com/sepect)
+- 👨🏻‍💻 &nbsp; Most of my projects are available on [GitLab](https://gitlab.com/sepect.hzten)
 - 🎨 &nbsp; Using [this svg](https://storyset.com/illustration/javascript-frameworks/amico) and Figma I made 👉
 - 💬 &nbsp; Ask me about anything tech related, I am happy to help;
 - 📫 &nbsp; Feel free to ping me on [LinkedIn](https://www.linkedin.com/in/sepect/)

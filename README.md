@@ -42,6 +42,6 @@ I am a versatilist and easily adapt to different hats (Full Stack Web Developer 
 <a href='https://github.com/sepect/github-stats-transparent'>
   
 ![Stats Overview](https://github-readme-stats.vercel.app/api?username=sepect&show_icons=true&theme=tokyonight)
-![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sepect&layout=compact)
+![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sepect&layout=donut-vertical)
 
 </a>

@@ -14,7 +14,6 @@ I am a versatilist and easily adapt to different hats (Full Stack Web Developer 
 
 - 🌱 &nbsp; I’m currently learning Typescript and NodeJS;
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [GitLab](https://gitlab.com/sepect.hzten)
-- 🎨 &nbsp; Using [this svg](https://storyset.com/illustration/javascript-frameworks/amico) and Figma I made 👉
 - 💬 &nbsp; Ask me about anything tech related, I am happy to help;
 - 📫 &nbsp; Feel free to ping me on [LinkedIn](https://www.linkedin.com/in/sepect/)
 - 📝 &nbsp; Checkout my [resume](https://drive.google.com/file/d/1KO8-1Ub9n06qSiwDd10VepR7Al7cB29c/view?usp=sharing)
@@ -41,7 +40,7 @@ I am a versatilist and easily adapt to different hats (Full Stack Web Developer 
 
 <a href='https://github.com/sepect/github-stats-transparent'>
   
-![Stats Overview](https://github-readme-stats.vercel.app/api?username=sepect&show_icons=true&theme=tokyonight)
 ![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sepect&layout=donut-vertical)
+![Stats Overview](https://github-readme-stats.vercel.app/api?username=sepect&show_icons=true&theme=tokyonight)
 
 </a>
